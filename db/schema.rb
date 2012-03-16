@@ -18,8 +18,8 @@ ActiveRecord::Schema.define(:version => 20110819215050) do
     t.integer  "assetable_id"
     t.string   "assetable_type", :limit => 30
     t.string   "type",           :limit => 30
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",                   :null => false
+    t.datetime "updated_at",                   :null => false
   end
 
   add_index "ckeditor_assets", ["assetable_type", "assetable_id"], :name => "idx_ckeditor_assetable"
