@@ -12,6 +12,11 @@ Aşağıdaki şekilde çalışın,
     $ rails s --binding=1.2.3.4
 
 Test: http://1.2.3.4:3000/main/index
+Heroku: http://ckeditor-carrierwave.heroku.com/main/index
+
+> Heroku tarafında resim upload sorunu mevcut.
+> Şöyle bir çözüm önerilmiş:
+> https://github.com/jnicklas/carrierwave/wiki/How-to%3A-Make-Carrierwave-work-on-Heroku
 
 # How to build this app from scratch
 
