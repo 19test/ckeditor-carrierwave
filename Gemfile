@@ -5,8 +5,6 @@ gem 'rails', '3.2.1'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
-
 gem "ckeditor", :git => 'git://github.com/fxposter/ckeditor.git'
 gem "carrierwave"
 gem "mini_magick"
@@ -39,4 +37,10 @@ gem 'jquery-rails'
 group :test do
   # Pretty printed test output
   gem 'turn', :require => false
+end
+group :development, :test do
+  gem 'sqlite3'
+end
+group :production do
+  gem 'pg', '0.12.2'
 end
