@@ -1,4 +1,6 @@
 Rails31WithCkeditorAndCarrierwave::Application.routes.draw do
+  resources :blogs
+
   get "main/index"
 
   # The priority is based upon order of creation:
